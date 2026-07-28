@@ -20,8 +20,8 @@ Each module is designed to be self-contained. The dependencies for the entire pr
 **Installation:**
 1.  Clone this repository:
     ```bash
-    git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-    cd YOUR_REPO_NAME
+    git clone https://github.com/Varunkc2096/capstone-project.git
+    cd capstone-project
     ```
 2.  Install all required Python packages:
     ```bash
