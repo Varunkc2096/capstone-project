@@ -1,0 +1,34 @@
+# ============================================================
+# Zepto AI/ML Capstone — combined requirements.txt (all 3 modules)
+# Install once at the repo root:  pip install -r requirements.txt
+# Requires Python >=3.10 (LangGraph's minimum supported version)
+# ============================================================
+
+# ---- Module 1: /data_pipeline (scraping + SQLite) ----
+requests>=2.31
+beautifulsoup4>=4.12
+lxml>=5.0                  # faster/more robust HTML parser backend for BeautifulSoup
+pandas>=2.0                # also used by Module 2 — listed once here
+
+# ---- Module 2: /analytics (EDA + modeling pipeline) ----
+numpy>=1.26
+seaborn>=0.13
+matplotlib>=3.8
+scikit-learn==1.6.1        # pinned — must match the version your saved .pkl pipeline was built with
+imbalanced-learn>=0.12
+joblib>=1.3
+
+# ---- Module 3: /support_assistant (RAG + LangGraph + FastAPI) ----
+sentence-transformers>=3.0
+chromadb>=1.0
+langgraph>=1.0
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.0
+
+# ---- Optional, ungraded extensions only — skip if you didn't attempt these ----
+# groq                      # only needed if you set MOCK_LLM=0 and use Groq's free-tier API
+# python-dotenv             # only needed if you load an API key from a local .env file
+
+# Note: sqlite3 (Module 1) and json/csv/os (all modules) are Python standard library —
+# they don't go in requirements.txt.
